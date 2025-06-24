@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/one_page_website.js"></script>
-</head>
+    <title>Lightbox Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 <body>
-  <p>test</p>
+  <header>
+    <h1>Lightbox Project by Gray-em Erezo</h1>
+    <h3>Choose your most favorite</h3>
+  </header>
+
+<div class="row">
+  
+  <div class="column">
+    <img src="img/pizza.png" alt="pizza" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/hamburger.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/hotdog.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/wings.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/pizza.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/hamburger.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/hotdog.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/wings.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/pizza.png"  style="width:100%" onclick="currentSlide(1)" alt="Pizza">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/hamburger.png" style="width:100%" onclick="currentSlide(2)" alt="Hamburger">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/hotdog.png" style="width:100%" onclick="currentSlide(3)" alt="Hotdog">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/wings.png"  style="width:100%" onclick="currentSlide(4)" alt="Chicken Wings">
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script src="js/one_page_website.js"></script>
 </body>
 </html>
