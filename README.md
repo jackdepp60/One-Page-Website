@@ -1,3 +1,3 @@
 # One-Page-Website
-# This is my portfolio website
+# This is my lightbox slider website.
 # It contains js, css and html files.
